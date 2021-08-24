@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+:root {
+  font-size: 62.5%;
+  --biolate: #562EFF;
+  --biolate2: linear-gradient(to bottom, #562EFF, #4217ff);
+  --pink: #ED6B4F;
+  --pink-red: #FF4A60;
+  --gray1: #e5e5e5;
+  --gray2: #9f9f9f;
+  --gray3: #a2a2a2;
+}
+
+body {
+  height: 100%;
+  background: var(--gray1, gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.6rem;
+  overflow-x: hidden;
+}
+
+/* --------------Header------------------- */
+.header-wrapper {
+  width: 100%;
+  background: var(--biolate, #562EFF);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0; left: 0;
+}
+.header-container {
+  width: 87rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+/* ------------------Logo------------------ */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.558rem;
+  color: #fff;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+.logo-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+/* ----X-------------Logo--------------X---- */
+
+/* ---------------Menu Icon---------------- */
+#menu-icon {
+  display: none;
+}
+.hamburger i {
+  font-size: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+.hamburger i:hover {
+  color: #e5e5e5;
+}
+/* ----X----------Menu Icon-----------X---- */
+
+/* ---------------Menu Bar ---------------- */
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6rem;
+}
+/* -----------Menu Item------------------ */
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.6rem;
+}
+ul li a {
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+}
+ul li:hover a {
+  color: #e5e5e5;
+}
+/* --X--------Menu Item---------------X-- */
+/* --X------------Menu Bar -------------X-- */
+/* ---X-----------Header-----------X------ */
+
+
+
+/* -------------Player and Blogs--------------- */
+.player_blog_wrapper {
+  width: 87rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3.3rem;
+  border-radius: .3rem;
+}
+
+/* ----------player Container--------------- */
+.player_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+}
+.player_container a {
+  color: var(--biolate);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+/* -----------------Player Wrapper---------------- */
+.player_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.player_wrapper a {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.player_wrapper a h2 {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+/* --x--------------Player Wrapper-------------x-- */
+/* --x-------player Container------------x-- */
+
+
+/* ------------------hr------------------- */
+.player_blog_wrapper hr {
+  height: .2rem;
+  background: #d1d1d1;
+  border: none;
+  outline: none;
+}
+/* --x---------------hr-----------------x-- */
+
+
+/* -------------blogs Container-------------- */
+.blog_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3.3rem;
+}
+.blog_container a {
+  color: var(--biolate);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+/* -----------------blog_wrapper---------------- */
+.blog_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3rem;
+  column-gap: 1.5rem;
+}
+.blog_wrapper a {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.blog_wrapper a article {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+.blog_wrapper a article h2 {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 3.4rem;
+}
+.blog_wrapper a article h4 {
+  color: var(--biolate);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.blog_wrapper a article h4 span {
+  color: #9f9f9f;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+/* --x--------------blog Wrapper-------------x-- */
+/* --x-----------blogs Container----------x-- */
+/* --x----------Player and Blogs------------x-- */
+
+
+
+
+/* -------------------course section start here--------------- */
+.course_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 87rem;
+  background: #fff;
+  padding: 3rem;
+  border-radius: .3rem;
+  justify-content: center;
+  align-items: center;
+}
+.course_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.course_container a {
+  color: var(--biolate);
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.card_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.card {
+  width: 26rem;
+  padding: .8rem;
+  border-radius: 1rem;
+  box-shadow: 0 .5rem 1.3rem #aaa;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.course_title {
+  display: flex;
+  flex-direction: column;
+  gap: .7rem;
+  font-family: 'roboto', sans-serif;
+}
+.course_title h2 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+.course_title h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--pink);
+}
+.review_time_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review {
+  display: flex;
+  align-items: center;
+  gap: 1.07rem;
+}
+.review h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #a2a2a2;
+}
+.review .gray {
+  background-color: #aeaeae;
+  opacity: 0.25;
+}
+.time {
+  display: flex;
+  align-items: center;
+  gap: 1.07rem;
+  background: #ffe4e8;
+  padding: .5rem;
+  border-radius: 1.469rem;
+}
+.time h4 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--pink-red);
+}
+/* --x----------------course section start here------------x-- */
+
+
+
+
+
+
+
+/* Responsivene Start from here */
+/* -----Under 768px---------- */
+@media only screen and (max-width: 768px) {
+  /* ---------------Header--------------- */
+  .header-container {
+    width: 100%;
+    padding: 1rem .5rem;
+  }
+
+  /* ---------------Menu Icon---------------- */
+  .hamburger i {
+    display: initial;
+  }
+  /* ----X----------Menu Icon-----------X---- */
+
+  /* ---------------Menu Bar ---------------- */
+  .menu-bar {
+    position: absolute;
+    top: 100%; right: 0;
+    background: var(--biolate2);
+    border-top: .1rem solid #6c4ef5;
+    width: 40vw;
+    height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    display: none;
+    z-index: 5;
+    padding-top: 1rem;
+  }
+  /* -----------Menu Item------------------ */
+  .menu-bar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  ul li {
+    width: 100%;
+  }
+  ul li a {
+    width: 100%;
+    text-align: center;
+  }
+  ul li:hover {
+    border-bottom: .1rem solid #6c4ef5;
+  }
+  #menu-icon:checked ~ .menu-bar {
+    display: flex;
+  }
+  /* --X--------Menu Item---------------X-- */
+  /* --X------------Menu Bar -------------X-- */
+  /* --x------------Header-------------x-- */
+
+
+  /* -------------Player and Blogs--------------- */
+  .player_blog_wrapper {
+    width: 100%;
+  }
+
+  /* ----------player Container--------------- */
+  /* -----------------Player Wrapper---------------- */
+  .player_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* --x--------------Player Wrapper-------------x-- */
+  /* --x-------player Container------------x-- */
+
+
+  /* -------------blogs Container-------------- */
+  /* -----------------blog_wrapper---------------- */
+  .blog_wrapper {
+    grid-template-columns: 1fr;
+  }
+  .blog_wrapper a {
+    justify-content: center;
+  }
+  /* --x--------------blog Wrapper-------------x-- */
+  /* --x-----------blogs Container----------x-- */
+  /* --x----------Player and Blogs------------x-- */
+
+
+  /* -------------------course section start here--------------- */
+  .course_wrapper {
+    width: 100%;
+  }
+  .card_wrapper {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  /* --x-----------------course section start here-------------x-- */
+}
+
+
+
+/* ----------max width 425px ---------- */
+@media only screen and (max-width: 425px) {
+    /* -----------------Player Wrapper---------------- */
+  .player_wrapper a {
+    flex-direction: column;
+  }
+  /* --x--------------Player Wrapper-------------x-- */
+
+
+  /* -----------------blog_wrapper---------------- */
+  .blog_wrapper a {
+    flex-direction: column;
+  }
+  /* --x--------------blog Wrapper-------------x-- */
+}
